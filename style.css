@@ -1,5 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #129799;
+}
+
+.containerNavBarTopoHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.NavBarTopoHeader,
+.NavBarBottomHeader {
+    width: 35%;
+    /* height: 15vh; */
+    padding: 1.5rem 0 1.5rem 0;
+    color: #F7F7F7;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid 1px red; */
+}
+
+.NavBarTopoHeader li:hover,
+.NavBarBottomHeader li:hover{
+    color: #FFA185;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+/* .liNavBarTopoHeader {
+
+} */
+
+.ContainerTituloImagemHeader {
+    display: flex;
+    padding: 0 0 0 2rem;
+    color: #F7F7F7;
+    font-weight: 700;
+    align-items: center;
+    /* border: solid 1px red; */
+}
+
+.ContainerTituloImagemHeader h1 {
+    padding: 2.2rem 0 0 0;
+}
+
+
+.ContainerTituloImagemHeader img {
+    width: 40rem;
+}
+
+.containerNavBarBottomHeader {
+    display: flex;
+    justify-content: center;
+    /* border: solid 1px red; */
+}
+
+/* MAIN */
+
+#containerAquarela{
+    background-color: #FFA185;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.ContainerTituloETextoAquarela h2 {
+    color: #FFFFFF;
 }
