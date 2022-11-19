@@ -44,7 +44,7 @@ header {
 
 .ContainerTituloImagemHeader {
     display: flex;
-    padding: 0 0 0 2rem;
+    /* padding: 0 0 0 2rem; */
     color: #F7F7F7;
     font-weight: 700;
     align-items: center;
@@ -52,12 +52,13 @@ header {
 }
 
 .ContainerTituloImagemHeader h1 {
-    padding: 2.2rem 0 0 0;
+    padding: 1.5rem 0 0 0;
+    font-size: 3rem;
 }
 
 
 .ContainerTituloImagemHeader img {
-    width: 40rem;
+    width: 52vw;
 }
 
 .containerNavBarBottomHeader {
@@ -70,14 +71,36 @@ header {
 
 #containerAquarela{
     background-color: #FFA185;
-    padding: 1.5rem 0 1.5rem 1.5rem;
+    padding: 0.75rem 0 1.5rem 1.5rem;
     border: solid 3px green;
 }
 
 .ContainerTituloETextoAquarela h2 {
+    font-size: 3rem;
+    padding: 0.75rem 0 1.5rem 0;
     color: #FFFFFF;
 }
 
-.ContainerImagensAquarela {
-    display: flex;
+.ContainerTituloETextoAquarela p {
+    font-weight: 500;
+}
+
+#SectionImagensAquarela {
+    display: inline-flex;
+    flex-direction: row;
+    /* background-color: red; */
+}
+
+.ContainerLinhaDeCimaImagensAquarela,
+.ContainerLinhaDeBaixoImagensAquarela {
+    /* width: 330px; */
+    display: inline-block;
+    flex-direction: row;
+    border: solid 1px yellow;
+}
+
+.ContainerLinhaDeCimaImagensAquarela img,
+.ContainerLinhaDeBaixoImagensAquarela img {
+    /* margin: 1.5rem 1.5rem 0 0; */
+    width: 320px;
 }
