@@ -8,6 +8,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* HEADER */
+
 header {
     width: 100%;
     background-color: #129799;
@@ -20,8 +22,9 @@ header {
 
 .NavBarTopoHeader,
 .NavBarBottomHeader {
-    width: 35%;
+    width: 62vw;
     /* height: 15vh; */
+    font-size: 1.85rem;
     padding: 1.5rem 0 1.5rem 0;
     color: #F7F7F7;
     font-weight: 500;
@@ -31,10 +34,16 @@ header {
     /* border: solid 1px red; */
 }
 
+.NavBarTopoHeader li,
+.NavBarBottomHeader li {
+    transition: 500ms;
+}
+
 .NavBarTopoHeader li:hover,
 .NavBarBottomHeader li:hover{
     color: #FFA185;
-    transition: 300ms;
+    transition: 500ms;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -52,13 +61,13 @@ header {
 }
 
 .ContainerTituloImagemHeader h1 {
-    padding: 1.5rem 0 0 0;
+    padding: 2rem 0 0 0;
     font-size: 3rem;
 }
 
 
 .ContainerTituloImagemHeader img {
-    width: 52vw;
+    width: 50vw;
 }
 
 .containerNavBarBottomHeader {
@@ -82,7 +91,9 @@ header {
 }
 
 .ContainerTituloETextoAquarela p {
+    font-size: 2rem;
     font-weight: 500;
+    padding: 0 0 2rem 0;
 }
 
 #SectionImagensAquarela {
@@ -94,13 +105,59 @@ header {
 .ContainerLinhaDeCimaImagensAquarela,
 .ContainerLinhaDeBaixoImagensAquarela {
     /* width: 330px; */
-    display: inline-block;
-    flex-direction: row;
-    border: solid 1px yellow;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* border: solid 2px yellow; */
 }
 
 .ContainerLinhaDeCimaImagensAquarela img,
 .ContainerLinhaDeBaixoImagensAquarela img {
-    /* margin: 1.5rem 1.5rem 0 0; */
-    width: 320px;
+    width: 650px;
+    /* border: solid 2px red; */
+}
+
+.ContainerBotaoVejaMais {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border: solid 2px yellow; */
+}
+
+.BotaoVejaMais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13vw;    /* COLOCANDO LARGURA NO 'BOTAO' PARA TESTAR QUESTAO DE ACESSIBILIDADE EM UM BOTAO MAIOR E MAIS FACIL DE CLICAR DO QUE APENAS A AREA DO PROPRIO TEXTO*/
+    height: 5vw;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    /* border: solid 2px red; */
+    transition: 1s;
+}
+
+.BotaoVejaMais:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    color: #129799;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+#ContainerFooter {
+    width: 100%;
+    height: 15vw;
+    background-color: #129799;
+}
+
+.ContainerLogoSocialMedia {
+    border: solid 2px red;
+}
+
+.ContainerNavBarFooter {
+    border: solid 2px yellow;
 }
